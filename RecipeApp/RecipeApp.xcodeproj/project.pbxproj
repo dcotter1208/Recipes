@@ -16,6 +16,7 @@
 		A1F71C4F1BD0150D004A13BB /* RecipeAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F71C4E1BD0150D004A13BB /* RecipeAppUITests.swift */; };
 		A1F71C601BD015D7004A13BB /* RecipeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F71C5F1BD015D7004A13BB /* RecipeModel.swift */; settings = {ASSET_TAGS = (); }; };
 		A1F71C621BD0185C004A13BB /* CategoryListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F71C611BD0185C004A13BB /* CategoryListTVC.swift */; settings = {ASSET_TAGS = (); }; };
+		A1F71C661BD02A13004A13BB /* RecipeListTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F71C651BD02A13004A13BB /* RecipeListTVC.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		A1F71C501BD0150D004A13BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1F71C5F1BD015D7004A13BB /* RecipeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeModel.swift; sourceTree = "<group>"; };
 		A1F71C611BD0185C004A13BB /* CategoryListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryListTVC.swift; sourceTree = "<group>"; };
+		A1F71C651BD02A13004A13BB /* RecipeListTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeListTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 			children = (
 				A1F71C611BD0185C004A13BB /* CategoryListTVC.swift */,
 				65DEEC8D1BD025B40086F2B6 /* RecipeDetailViewController.swift */,
+				A1F71C651BD02A13004A13BB /* RecipeListTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1F71C661BD02A13004A13BB /* RecipeListTVC.swift in Sources */,
 				A1F71C2F1BD0150D004A13BB /* AppDelegate.swift in Sources */,
 				A1F71C601BD015D7004A13BB /* RecipeModel.swift in Sources */,
 				65DEEC8E1BD025B40086F2B6 /* RecipeDetailViewController.swift in Sources */,

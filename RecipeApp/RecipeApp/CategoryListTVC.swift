@@ -25,6 +25,10 @@ class CategoryListTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        categoryList!.categories.append(dinnerCategory!)
+        categoryList?.categories.append(lunchCategory!)
+        categoryList?.categories.append(breakfastCategory!)
+        categoryList?.categories.append(dessertCategory!)
     }
 
     override func didReceiveMemoryWarning() {
