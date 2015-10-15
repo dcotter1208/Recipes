@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65DEEC8C1BD0251E0086F2B6 /* RecipeDetailsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DEEC8B1BD0251E0086F2B6 /* RecipeDetailsTVC.swift */; settings = {ASSET_TAGS = (); }; };
 		A1F71C2F1BD0150D004A13BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1F71C2E1BD0150D004A13BB /* AppDelegate.swift */; };
 		A1F71C341BD0150D004A13BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1F71C321BD0150D004A13BB /* Main.storyboard */; };
 		A1F71C361BD0150D004A13BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1F71C351BD0150D004A13BB /* Assets.xcassets */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		65DEEC8B1BD0251E0086F2B6 /* RecipeDetailsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailsTVC.swift; sourceTree = "<group>"; };
 		A1F71C2B1BD0150D004A13BB /* RecipeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecipeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1F71C2E1BD0150D004A13BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1F71C331BD0150D004A13BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				A1F71C611BD0185C004A13BB /* CategoryListTVC.swift */,
+				65DEEC8B1BD0251E0086F2B6 /* RecipeDetailsTVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DEEC8C1BD0251E0086F2B6 /* RecipeDetailsTVC.swift in Sources */,
 				A1F71C2F1BD0150D004A13BB /* AppDelegate.swift in Sources */,
 				A1F71C601BD015D7004A13BB /* RecipeModel.swift in Sources */,
 				A1F71C621BD0185C004A13BB /* CategoryListTVC.swift in Sources */,
@@ -511,6 +515,7 @@
 				A1F71C551BD0150D004A13BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1F71C561BD0150D004A13BB /* Build configuration list for PBXNativeTarget "RecipeAppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +524,7 @@
 				A1F71C581BD0150D004A13BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A1F71C591BD0150D004A13BB /* Build configuration list for PBXNativeTarget "RecipeAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +533,7 @@
 				A1F71C5B1BD0150D004A13BB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
