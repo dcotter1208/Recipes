@@ -9,6 +9,19 @@
 import UIKit
 
 class CategoryListTVC: UITableViewController {
+    
+    // This is the big list
+    var categoryList = CategoryList?()
+    
+    // Instances of the Meal Categories
+    var dinnerCategory = MealCategory?()
+    var lunchCategory = MealCategory?()
+    var breakfastCategory = MealCategory?()
+    var dessertCategory = MealCategory?()
+    
+    // Instances of recipes
+    var pizza = Recipe(name: "Pizza")
+    var pbj = Recipe(name: "PB&J")
 
     override func viewDidLoad() {
         super.viewDidLoad()
