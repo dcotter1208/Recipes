@@ -10,9 +10,17 @@ import UIKit
 
 class RecipeDetailViewController: UIViewController {
 
+    var recipeDetails = Recipe?()
+    
+    @IBOutlet weak var recipeNameLabel: UILabel!
+    @IBOutlet weak var recipeDetailsLabel: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        recipeNameLabel.text = recipeDetails?.name
+        recipeDetailsLabel.text = recipeDetails?.instructions
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,8 +29,10 @@ class RecipeDetailViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    
+    
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
@@ -30,6 +40,6 @@ class RecipeDetailViewController: UIViewController {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+    
 
 }
