@@ -10,14 +10,16 @@ import UIKit
 
 class CategoryListTVC: UITableViewController {
     
+    var selectedIndex = 0
+    
     // This is the big list
-    var categoryList = CategoryList?()
+    var categoryList = [MealCategory]()
     
     // Instances of the Meal Categories
-    var dinnerCategory = MealCategory?()
-    var lunchCategory = MealCategory?()
-    var breakfastCategory = MealCategory?()
-    var dessertCategory = MealCategory?()
+    var dinnerCategory = MealCategory(name: "Dinner Recipes")
+    var lunchCategory = MealCategory(name: "Lunch Recipes")
+    var breakfastCategory = MealCategory(name: "Breakfast Recipes")
+    var dessertCategory = MealCategory(name: "Dessert Recipes")
     
     // Instances of recipes
     var pizza = Recipe(name: "Pizza")
@@ -25,10 +27,7 @@ class CategoryListTVC: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        categoryList!.categories.append(dinnerCategory!)
-        categoryList?.categories.append(lunchCategory!)
-        categoryList?.categories.append(breakfastCategory!)
-        categoryList?.categories.append(dessertCategory!)
+        categoryList = [dinnerCategory, lunchCategory, breakfastCategory, dessertCategory]
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +42,25 @@ class CategoryListTVC: UITableViewController {
 //    }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return categoryList.count
+    }
+    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        selectedIndex = indexPath.row
+    }
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        var cell = tableView.dequeueReusableCellWithIdentifier("categoryListCell") as UITableViewCell!
+        if (cell == nil) {
+            cell = UITableViewCell(style: .Default, reuseIdentifier: "categoryListCell")}
+        cell.textLabel?.text = categoryList[indexPath.row].name
+        return cell
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if segue.identifier == "showRecipeListSegue" {
+            let destVC = segue.destinationViewController as! RecipeListTVC
+            destVC.mealCategory = categoryList[selectedIndex]
+        }
     }
 }
