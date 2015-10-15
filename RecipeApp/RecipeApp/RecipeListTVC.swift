@@ -2,7 +2,11 @@
 //  RecipeListTVC.swift
 //  RecipeApp
 //
+<<<<<<< HEAD
 //  Created by Melissa on 10/15/15.
+=======
+//  Created by Donovan Cotter on 10/15/15.
+>>>>>>> f499efc7d2d022dce2882f1a68f9a175617afc3b
 //  Copyright © 2015 Melissa Donovan Kate. All rights reserved.
 //
 
